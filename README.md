@@ -9,5 +9,9 @@
   4)  git remote ...
   5)  git push origin master
   6)  git checkout -b dev   创建并切换分支
-  7） git push origin dev
-  8)  gti pull origin dev
+  7） git push origin dev   推送到分支
+  8)  gti pull origin dev   拉取分支代码
+  9） git clone
+  10) git branch 查看分支
+  11）git checkout -b dev origin/dev  根据远程dev分支建立本地仓库dev分支
+  12） git diff dev master
