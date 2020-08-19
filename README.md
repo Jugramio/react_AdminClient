@@ -13,5 +13,6 @@
   8)  gti pull origin dev   拉取分支代码
   9） git clone
   10) git branch 查看分支
-  11）git checkout -b dev origin/dev  根据远程dev分支建立本地仓库dev分支
+  11）git checkout -b dev origin/dev  根据远程dev分支建立本地仓库dev分支(clone
+  之后有记录直接使用，否则新分支需执行先执行git pull后才能使用)
   12） git diff dev master
