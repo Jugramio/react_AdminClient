@@ -57,5 +57,31 @@ yarn add antd
      },
    ```
 
+   自定义antd主题
    
-
+   需求：使antd的默认基本颜色从Blue变为Green
+   
+   下载工具包：
+   
+   ```
+   yarn add less less-loader
+   ```
+   
+   修改config-overrides.js
+   
+   ```javascript
+   const {override,fixBabelImports, addLessLoader} = require('customize-cra')
+   module.exports = override(
+   	fixBabelImports('import',{  // 配置上babel-plugin-import
+           libraryName: 'antd',	// 针对的是antd
+           libraryDirectory: 'es', // 源码文件夹中的es文件夹
+           style: true			// 自动打包相关的css
+       }),
+       addLessLoader({
+           javascriptEnabled: true,
+           modifyVars: {'@primary-color': '#1DA57A'}
+       })
+   );
+   ```
+   
+   
